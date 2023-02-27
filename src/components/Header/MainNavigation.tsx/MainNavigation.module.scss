@@ -1,0 +1,7 @@
+@use "../../../scss/" as *;
+
+.mainNavigation {
+  width: 516px;
+  display: flex;
+  justify-content: space-between;
+}

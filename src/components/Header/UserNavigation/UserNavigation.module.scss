@@ -1,0 +1,10 @@
+@use '../../../scss/' as *;
+
+.userNavigation {
+  width: 516px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+

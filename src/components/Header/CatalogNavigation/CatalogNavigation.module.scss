@@ -1,0 +1,48 @@
+@use '../../../scss/' as *;
+
+.catalog{
+  width: 516px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &_button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &__open{
+      background-image: url('/assets/icons/closeCatalog.svg');
+    }
+
+    &__close{
+      background-image: url('/assets/icons/openCatalog.svg');    
+    }
+  }
+
+  &_link{
+    display: inline-block;
+    padding: 12px 18px 12px 0;
+    text-decoration: none;
+    color: black;
+  }
+
+  &_list{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+
+    &__container{
+      position: absolute;
+      top: 50px;
+      left: -60px;
+      z-index: 2;
+      width: 1280px;
+      padding: 33px 60px;
+      box-sizing: border-box;
+      background-color: #ffe17f;
+    }
+  }
+}
