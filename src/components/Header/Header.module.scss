@@ -1,0 +1,21 @@
+@use '../../scss' as *;
+
+.header {
+  margin-top: 40px;
+  padding: 38px 60px;
+  position: relative;
+  background-color: $yellow-light;
+  display: flex;
+  flex-direction: column;
+
+  &__navWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.text {
+  color: red;
+}
