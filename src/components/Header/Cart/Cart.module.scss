@@ -1,0 +1,22 @@
+@use '../../../scss/' as *;
+
+.cart {
+  &_container{
+  display: flex;
+  align-items: center;
+  position: relative;
+  }
+
+  &_itemNumber{
+    position: absolute;
+    top: 0;
+    left: 6px;
+  }
+
+  &_button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+}
+
