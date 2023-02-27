@@ -1,0 +1,43 @@
+@use '../../../scss/' as *;
+
+.searchForm{
+  display: flex;
+  height: 40px;
+  width: 516px;
+
+  &_input {
+    border: none;
+    margin-left: 10px;
+    padding: 12px 16px;
+    width: 330px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+
+    &:focus-within{
+      outline: none;
+    }
+  }
+
+  &_button {
+    width: 160px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: transparent;
+    border: solid 2px black;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+
+    &:active {
+      background-color: black;
+    }
+  }
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
