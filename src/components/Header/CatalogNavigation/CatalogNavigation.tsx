@@ -1,4 +1,5 @@
 import { useRef, useState } from "react"
+import { Link } from "react-router-dom"
 import { NavItem } from "../../../interfaces/UserNavItem"
 import Navitem from "../NavItem/NavItem"
 import styles from "./CatalogNavigation.module.scss"
@@ -48,7 +49,7 @@ const CatalogNavigation = () => {
   ] 
   return(
     <div className={styles.catalog}>
-      <a className={`${styles.catalog_link} ${styles.navigation_secondFontStyle}`} href="#">Катлог товаров</a>
+      <Link className={`${styles.catalog_link} ${styles.navigation_secondFontStyle}`} to="catalog">Катлог товаров</Link>
       <button className={catalogNavState ? `${styles.catalog_button__open} ${styles.catalog_button}` : `${styles.catalog_button__close} ${styles.catalog_button}`} onClick={handleCatalogButton}>
         <span className={styles.visuallyHidden}>Открыть каталог товаров</span>
       </button>

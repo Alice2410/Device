@@ -5,12 +5,16 @@ import Logo from "./Logo/Logo";
 import MainNavigation from "./MainNavigation.tsx/MainNavigation";
 import Search from "./Search/Search";
 import UserNavigation from "./UserNavigation/UserNavigation";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className={`${styles.header} ${styles.container}`}>
       <div className={styles.headerBody}>
-        <Logo></Logo>
+        <Link to="/">
+          <Logo></Logo>
+        </Link>
+        
         <div className={styles.header__navWrapper}>
           <Search></Search>
           <UserNavigation></UserNavigation>
