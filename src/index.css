@@ -1,1 +1,27 @@
+.swiper-button-prev,
+.swiper-button-next{
+  fill: black;
+}
 
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  color: #000 !important;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after{
+  color: #007aff !important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #000 !important;
+}
+
+.swiper-pagination-bullet:hover{
+  background-color: #007aff !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination{
+  top: 560px !important;
+}
