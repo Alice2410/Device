@@ -1,5 +1,5 @@
 import { NavItem } from "../../../interfaces/UserNavItem";
-import SVGIcon from "../SVGIcon/SVGIcon";
+import SVGIcon from "../../Common/SVGIcon/SVGIcon";
 import styles from "./NavItem.module.scss"
 
 const Navitem = (item: NavItem) => {

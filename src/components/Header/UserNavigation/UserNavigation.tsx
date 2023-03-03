@@ -1,7 +1,7 @@
 import { NavItem } from "../../../interfaces/UserNavItem"
 import Cart from "../Cart/Cart"
 import Navitem from "../NavItem/NavItem"
-import SVGIcon from "../SVGIcon/SVGIcon"
+import SVGIcon from "../../Common/SVGIcon/SVGIcon"
 import styles from "./UserNavigation.module.scss"
 
 
