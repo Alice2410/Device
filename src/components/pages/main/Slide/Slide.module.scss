@@ -1,0 +1,104 @@
+.slide{
+  &_container{
+    position: relative;
+    margin-bottom: 70px;
+    // padding: 50px;
+    // display: flex;
+    // gap: 40px;
+  }
+
+  &_header{
+    width: 100%;
+    min-height: 150px;
+    padding: 15px 60px 0 60px;
+    box-sizing: border-box;
+    background-color: #ffe17f;
+    position: relative;
+  }
+
+  &_number{
+    font-family: "Rubik","Arial", sans-serif;
+    font-size: 180px;
+    line-height: 30px;
+    font-weight: 800;
+    text-align: right;
+    color: white;
+    position: absolute;
+    height: 135px;
+    width: 250px;
+    right: 50px;
+    bottom: -68px;
+  }
+
+  &_body{
+    width: 1160px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    top: -150px;
+    margin-bottom: -150px;
+  }
+}
+
+.image{
+  &_container{
+    width: 560px;
+    position: relative;
+  }
+}
+
+.description{
+  &_container{
+    width: 560px;
+    position: relative;
+    padding-top: 121px;
+    box-sizing: border-box;
+    padding-right: 30px;
+  }
+
+  &_title{
+    font-family: "Raleway","Arial", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+    text-align: left;
+    color: black;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 28px;
+  }
+
+  &_text{
+    font-family: "Rubik","Arial", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: #444444;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 36px;
+  }
+}
+
+.parameter{
+  &_value{
+    font-family: "Rubik","Arial", sans-serif;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  &_name{
+    font-family: "Rubik","Arial", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444444;
+
+    >td{
+      padding-right: 25px;
+    }
+  }
+}
+
