@@ -1,6 +1,7 @@
 import { NavItem } from "../../../interfaces/UserNavItem"
 import Navitem from "../NavItem/NavItem"
-import styles from "./MainNavigation.module.scss"
+import styles from "./MainNavigation.module.scss";
+import classNames from 'classnames';
 
 
 const MainNavigation = () => {
@@ -24,7 +25,7 @@ const MainNavigation = () => {
 
   return (
     <nav>
-      <ul className={`${styles.noBulletsList} ${styles.mainNavigation} ${styles.navigation_secondFontStyle}`}>
+      <ul className={classNames(styles.noBulletsList, styles.mainNavigation, styles.navigation_secondFontStyle)}>
         {
           mainNavItems.map((item) => {
             return (

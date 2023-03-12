@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { NavItem } from "../../../interfaces/UserNavItem"
 import Navitem from "../NavItem/NavItem"
 import styles from "./CatalogNavigation.module.scss"
+import classNames from 'classnames';
 
 
 const CatalogNavigation = () => {
@@ -47,14 +48,15 @@ const CatalogNavigation = () => {
       href: '#',
     },
   ] 
+
   return(
     <div className={styles.catalog}>
-      <Link className={`${styles.catalog_link} ${styles.navigation_secondFontStyle}`} to="catalog">Катлог товаров</Link>
-      <button className={catalogNavState ? `${styles.catalog_button__open} ${styles.catalog_button}` : `${styles.catalog_button__close} ${styles.catalog_button}`} onClick={handleCatalogButton}>
+      <Link className={classNames(styles.catalog_link, styles.navigation_secondFontStyle)} to="catalog">Катлог товаров</Link>
+      <button className={classNames(styles.catalog_button, {[styles.catalog_button__open]: catalogNavState})} onClick={handleCatalogButton}>
         <span className={styles.visuallyHidden}>Открыть каталог товаров</span>
       </button>
-      <div className={ catalogNavOpen.current ? `${styles.catalog_list__container}` : `${styles.visuallyHidden}`}>
-        <ul className={`${styles.noBulletsList} ${styles.catalog_list}`}>
+      <div className={classNames({[styles.visuallyHidden]: !catalogNavOpen.current, [styles.catalog_list__container]: catalogNavOpen.current})}>
+        <ul className={classNames(styles.noBulletsList, styles.catalog_list)}>
           {
             catalogItems.map((item) => <Navitem key={item.key} title={item.title} href={item.href}></Navitem>)
           }

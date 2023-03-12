@@ -1,4 +1,5 @@
 import React from "react"
+import classNames from 'classnames';
 import styles from "./Header.module.scss"
 import CatalogNavigation from "./CatalogNavigation/CatalogNavigation";
 import Logo from "./Logo/Logo";
@@ -9,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className={`${styles.header} ${styles.container}`}>
+    <header className={classNames(styles.header, styles.container)}>
       <div className={styles.headerBody}>
         <Link to="/">
           <Logo></Logo>
@@ -19,7 +20,7 @@ const Header = () => {
           <Search></Search>
           <UserNavigation></UserNavigation>
         </div>
-        <div className={`${styles.header__navWrapper}`}>
+        <div className={styles.header__navWrapper}>
           <CatalogNavigation></CatalogNavigation>
           <MainNavigation></MainNavigation>
         </div>

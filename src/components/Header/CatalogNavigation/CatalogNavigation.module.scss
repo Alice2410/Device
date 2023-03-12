@@ -12,14 +12,12 @@
     height: 50px;
     background-color: transparent;
     cursor: pointer;
+    background-image: url('/assets/icons/openCatalog.svg');    
 
     &__open{
       background-image: url('/assets/icons/closeCatalog.svg');
     }
 
-    &__close{
-      background-image: url('/assets/icons/openCatalog.svg');    
-    }
   }
 
   &_link{

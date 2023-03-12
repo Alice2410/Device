@@ -1,8 +1,8 @@
 import { NavItem } from "../../../interfaces/UserNavItem"
 import Cart from "../Cart/Cart"
 import Navitem from "../NavItem/NavItem"
-import SVGIcon from "../../Common/SVGIcon/SVGIcon"
 import styles from "./UserNavigation.module.scss"
+import classNames from 'classnames';
 
 
 const UserNavigation = () => {
@@ -22,7 +22,7 @@ const UserNavigation = () => {
   ]
   return (
     <nav>
-      <ul className={`${styles.noBulletsList} ${styles.userNavigation} ${styles.navigation_firstFontStyle}`}>
+      <ul className={classNames(styles.noBulletsList, styles.userNavigation, styles.navigation_firstFontStyle)}>
         { userNavigationItems.map ((item) => {
           return (   
             <Navitem title={item.title} key={item.key} href={item.href} svg={item.svg}></Navitem>

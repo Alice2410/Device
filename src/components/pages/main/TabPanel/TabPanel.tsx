@@ -1,15 +1,5 @@
+import { TabContent, TabPanelProps } from '../../../../interfaces/Tabs';
 import styles from './TabPanel.module.scss';
-
-interface TabPanelProps {
-  index: number;
-  value: number;
-}
-
-interface TabContent {
-  title: string;
-  description: string;
-  imgPath: string;
-}
 
 const TabPanel = (props: TabPanelProps) => {
   const {index, value} = props;
